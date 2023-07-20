@@ -12,6 +12,7 @@
 }
 h1 {
   font-size: 3em;
+  margin-bottom: 0;
 }
 
 .title {
@@ -22,7 +23,6 @@ h1 {
   align-content: flex-start;
   margin-left: 5vw;
   margin-right: 5vw;
-  margin-top: 5vh;
   margin-bottom: 5vh;
 }
 
@@ -30,6 +30,10 @@ p {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.title p:last-of-type {
+  margin-bottom: 5vh;
 }
 
 button {
@@ -51,8 +55,16 @@ button {
   color: white;
 }
 
+.main div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 15%;
+}
+
 .main p {
   color: black;
+  text-align: left;
 }
 
 h2 {
