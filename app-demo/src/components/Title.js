@@ -1,10 +1,16 @@
+const paragraphes = [
+  { content: "You will learn how to use" },
+  { content: "the most popular frontend library" },
+  { content: "and become a super Ninja developer" },
+];
+
 function Title() {
   return (
     <div className="title">
       <h1>Say hello to ReactJS</h1>
-      <p>You will learn how to use</p>
-      <p>the most popular frontend library</p>
-      <p>and become a super Ninja developer</p>
+      {paragraphes.map((paragraph) => (
+        <p>{paragraph.content}</p>
+      ))}
       <button>Awesome!</button>
     </div>
   );
